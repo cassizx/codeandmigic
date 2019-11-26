@@ -7,12 +7,7 @@ window.sucsessHandler = function (data) {
     window.render(wizards);
 };
 
- 
- 
-
     let URLs = 'https://js.dump.academy/code-and-magick/data';
    // window.load(URLs, successHendler, errorHandler);
-
-
 
 })();

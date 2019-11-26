@@ -20,7 +20,7 @@
             xhr.addEventListener ('timeout', function () {
                 onError('запрос не успел выпониться за: ' + xhr.timeout + ' мс');
             });
-            xhr.timeout = 10000; //10s
+            xhr.timeout = 9000; //10s
             xhr.open('GET', URL);
             xhr.send();
         };  
