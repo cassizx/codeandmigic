@@ -1,0 +1,126 @@
+// https://js.dump.academy - данные
+
+/* //генерация имени волшебника
+let wizards_names = ['Иван ', "Хуан Себастьян ", " Мария ", "Кристоф ", "Виктор ", "Юлия " , "Люпита ", "Вашингтон " ];
+let wizards_last_name = [' да Марья' , ' Верон', ' Мирабелла' , ' Вальц' , ' Онопко' , ' Топольницкая' , ' Нионго' , ' Ирвинг'];
+
+let eyesColors = ['black' , 'red' , 'blue' , 'yellow' , 'green' ];
+
+function getNameWizard(wizards_names, last = wizards_last_name) {
+for (let i = 0; i < wizards_names.length; i++) {
+    let names = Math.floor(Math.random() * wizards_names.length);
+    let last_name = Math.floor(Math.random() * wizards_last_name.length);
+    let name = wizards_names[names] + wizards_last_name[last_name];
+    return name;
+}
+
+};
+//
+//генерация цвета мантии волшебника
+function  getCoatColor(color){
+    for (let i = 0; i < coatsColor.length; i++) {
+        let number = Math.floor(Math.random() * coatsColor.length);
+        let coatColor = color[number];
+        return coatColor;
+    }
+}
+//генерация цвета глазз волшебника
+function getEyesColor(eyes) {
+    for (let i = 0; i < eyesColors.length; i++) {
+        let number = Math.floor(Math.random() * eyesColors.length);
+        let eyesColor = eyes[number];
+        return eyesColor;
+    }
+}
+
+
+
+
+
+
+let wizards = [
+    {
+        name : getNameWizard(wizards_names),
+        coatColor : getCoatColor(coatsColor),
+        eyesColor : getEyesColor(eyesColors)
+    },
+    {
+        name : getNameWizard(wizards_names),
+        coatColor : getCoatColor(coatsColor),
+        eyesColor  : getEyesColor(eyesColors)
+    },
+    {
+        name : getNameWizard(wizards_names),
+        coatColor : getCoatColor(coatsColor),
+        eyesColor  : getEyesColor(eyesColors)  
+
+    },
+    {
+        name : getNameWizard(wizards_names),
+        coatColor : getCoatColor(coatsColor),
+        eyesColor  : getEyesColor(eyesColors) 
+    }
+];
+
+ */
+/* 
+'use strict';
+( function () {
+
+//открытие и закрытие окна
+
+let ESC_KEYCODE = 27;
+let ENTER_KEYCODE = 13;
+let userDialog = document.querySelector('.setup');
+let openSetung = document.querySelector('.setup-open');
+let setupClose = document.querySelector('.setup-close');
+let setupOpenIcon = document.querySelector('.setup-open-icon');
+
+
+function onPopupEscPress(evt) {
+    if (evt.keyCode === ESC_KEYCODE) {
+        evt.preventDefault();    
+        closePopUp();
+    }
+}
+
+function openPopUp() {
+    userDialog.classList.remove('hidden');
+    document.addEventListener('keydown', onPopupEscPress);
+}
+
+
+function closePopUp() {  
+    userDialog.classList.add('hidden');
+    document.addEventListener('keydown', onPopupEscPress);
+}
+
+
+openSetung.addEventListener('click',function (evt) {
+    evt.preventDefault();
+    openPopUp();
+
+});
+
+setupClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    closePopUp();
+});
+
+setupClose.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === ENTER_KEYCODE) {
+        evt.preventDefault();    
+        closePopUp();        
+    }
+  });
+
+
+setupOpenIcon.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === ENTER_KEYCODE) {   
+        openPopUp();
+        
+    }
+});
+
+})();
+ */
